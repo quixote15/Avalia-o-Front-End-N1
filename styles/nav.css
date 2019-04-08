@@ -15,8 +15,19 @@ body {
   text-align: center;
   position: relative;
   padding-bottom: 75px;
-  border-bottom: 1px solid #e2e2e2;
+ 
 }
+
+.nav:after {
+    content : "";
+    position: absolute;
+    left    : 1%;
+    bottom  : 0;
+    
+    height  : 1px;
+    width   : 98%;  /* or 100px */
+    border-bottom: 2px solid #E7E7E7;
+  }
 
 .nav > .nav-header {
   display: inline;
@@ -50,12 +61,12 @@ body {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: #efefef;
+  color: #b1b1b1;
   font-size: 25px;
 }
 
 .nav > .nav-links > a:hover {
-  background-color: rgba(177, 167, 167, 0.3);
+    border-bottom: 5px solid #4EC2DD;
 }
 
 .nav > #nav-check {
@@ -89,7 +100,7 @@ input.search-input::placeholder{
 }
 .nav-search .icon{
     position: absolute;
-    top: 30%;
+    top: 26%;
     z-index: 1;
     margin-left: 10px;
     color: #d1d1d1;
@@ -149,7 +160,7 @@ input.search-input::placeholder{
     padding: 13px;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: rgba(0, 0, 0, 0.3);
   }
   .nav > .nav-btn > label > span {
     display: block;
