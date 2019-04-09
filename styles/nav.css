@@ -5,11 +5,25 @@
 body {
   margin: 0px;
   font-family: 'Helvetica';
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,h2,h3,h4,h5{
+  margin: 0 0;
 }
 
 h1,h2,h3,h4,h5,label{
     color: #b1b1b1;
+
+}
+
+header{
+  text-align: center;
+}
+
+.label--sm{
+  font-size: 12px;
 }
 
 .nav {
