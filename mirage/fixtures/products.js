@@ -1,7 +1,8 @@
 export default [
+  
     {
         id:1,
-        description: 'Action figure bombeiro Mario topzeira das galáxias',
+        description: 'Action figure Super Mario Bross - Bandai',
         originalPrice: 249,
         price: 149,
         banner: 'https://purepng.com/public/uploads/large/purepng.com-mario-brosmariofictional-charactervideo-gamefranchisenintendodesigner-17015286315852qvna.png'

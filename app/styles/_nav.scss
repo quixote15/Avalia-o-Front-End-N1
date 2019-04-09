@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
   }
@@ -14,7 +16,7 @@
   }
   
   h1,h2,h3,h4,h5,label{
-      color: #b1b1b1;
+      color: $primary-gray;
   
   }
   
@@ -25,6 +27,10 @@
   .label--sm{
     font-size: 12px;
   }
+
+  /***
+    navbar
+  ***/
   
   .nav {
     margin-top: 10px;
@@ -79,12 +85,12 @@
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: #b1b1b1;
+    color: $primary-gray;
     font-size: 25px;
   }
   
   .nav > .nav-links > a:hover {
-      border-bottom: 5px solid #4EC2DD;
+      border-bottom: 5px solid $primary-color;
   }
   
   .nav > #nav-check {
@@ -93,7 +99,7 @@
   
   
   .active{
-      color: #4EC2DD !important;
+      color: $primary-color !important;
   }
   
   .nav-search{
@@ -117,8 +123,10 @@
       margin-top: 30px;
   }
   .nav-search .icon{
+      width: 24px;
+      height: 24px;
       position: absolute;
-      top: 26%;
+      top: 25%;
       z-index: 1;
       margin-left: 10px;
       color: #d1d1d1;
@@ -136,6 +144,28 @@
       padding: 0;
       margin: auto;
   }
+
+  /***
+    notification badge
+  **/
+
+ .badge{
+    position:relative;
+ }
+ .badge[data-badge]:after {
+    content:attr(data-badge);
+    position:absolute;
+    top:0px;
+    right:-10px;
+    font-size:.7em;
+    background:$primary-color;
+    color:white;
+    width:18px;height:18px;
+    text-align:center;
+    line-height:18px;
+    border-radius:50%;
+    box-shadow:0 0 1px #333;
+ }
   
   /**
       Media queries

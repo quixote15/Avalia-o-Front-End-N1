@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import "colors";
 @import "normalize";
 @import "no-bootstrap";
 @import "nav";
 
 .title--dark{
-    color: #0F4156;
+    color: $secundary-color;
 }
 
 /**
@@ -43,7 +44,7 @@
 .paragraph{
     text-align: left;
     font-weight: 500;
-    color: #b1b1b1;
+    color: $primary-gray;
 }
 
 .product-card-shop,.product-card-frete{
@@ -64,7 +65,7 @@
 
 .product-card-frete{
     margin-top: 10px;
-    background-color: #4EC2DD;
+    background-color: $primary-color;
 
 }
 
@@ -74,7 +75,7 @@
 
 .product-price{
     font-size: 18px;
-    color: #4EC2DD;
+    color: $primary-color;
     margin-top: 5px;
 }
 
@@ -92,12 +93,12 @@
 **/
 
 .btn{
-    background-color: #71CE4B;
+    background-color: $green-success;
     padding: 8px;
     color: #FFF;
     font-size: 18px;
     border:none;
-    box-shadow: 0 3px #4CAF50;
+    box-shadow: 0 3px darken( $green-success, 10% );
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
@@ -105,7 +106,7 @@
 
 .btn--dark{
 
-    background-color: #0F4156;
+    background-color: $secundary-color;
     box-shadow: 0 3px #0F4140;
     width: 90px;
 }
@@ -135,7 +136,7 @@ input.custom-input--sm{
 }
 
 .footer{
-    background-color: #4EC2DD;
+    background-color: $primary-color;
     flex-shrink: 0;
 }
 .footer p{
@@ -147,7 +148,7 @@ input.custom-input--sm{
     display: flex;
     justify-content: flex-end;
     padding: 5px 25px 0 0;
-    background-color: #0F4156;
+    background-color: $secundary-color;
 }
 .footer-logo{
     width: 40px;

@@ -14,14 +14,13 @@
         </div>
 
         <div class="nav-search ">
-            <span class="icon">
-                <i class="fa fa-search fa-lg"></i>
-            </span>
+            
+            <img class="icon" src="{{rootURL}}/icons/search.svg" alt="search icon">
             <input type="text" name="busca" id="buscaItens" class="search-input" placeholder="Digite o que procura">
         </div>
 
-        <div class="nav-shopping-cart">
-            <img class="cart-icon" src="{{rootURL}}/icons/shopping-cart.svg" alt="carrinho de compras">
+        <div class="nav-shopping-cart badge" data-badge="{{cartItems}}">
+            <img class="cart-icon "  src="{{rootURL}}/icons/shopping-cart.svg" alt="carrinho de compras">
         </div>
 
 
@@ -39,29 +38,36 @@
 
   <div class="container">
 
+<form id="login-form" class="modal">
+  <h1>oi</h1>
+</form>
+
+<a href="#login-form" rel="modal:open">Login</a>
+
       <div class="flex-grid-thirds">
         <div class="col-1 col-s-12">
-            <img class="product-image--small" src="https://ae01.alicdn.com/kf/HTB1pdbKa4WYBuNjy1zkq6xGGpXaL.jpg" alt="mario" >
+            <img class="product-image--small" src="{{defaultProduct.banner}}" alt="mario" >
         </div>
         <div class="col-6 col-s-12">
-            <img class="product-image" src="https://ae01.alicdn.com/kf/HTB1pdbKa4WYBuNjy1zkq6xGGpXaL.jpg" alt="mario">
+            <img class="product-image" src="{{defaultProduct.banner}}" alt="mario">
         </div>
         <div class="col-5 col-s-12">
-            <h1 class="product-title">Action figure bombeiro Mario topzeira das galáxias</h1>
+         
+            <h1 class="product-title">{{defaultProduct.description}}</h1>
             <div class="product-card-shop">
                 <div class="row">
-                    <label for="de"> de R$ 100,0</label>
+                    <label for="de"> de R$ {{defaultProduct.originalPrice}}</label>
                 </div>
                 <div class="row valign-wrapper">
                  
                         <label for="preco">por</label>
-                        <h5 class="product-price">R$ 149,00</h5>
+                        <h5 class="product-price">R$ {{defaultProduct.price}}</h5>
 
                    
                 </div>
                 <div class="row">
 
-                    <button class="btn">COMPRA AE</button>
+                    <button class="btn" {{action "addProductToCart" defaultProduct}}>COMPRA AE</button>
                 </div>
             </div>
             <div class="product-card-frete">
@@ -111,30 +117,16 @@
         </div>
           
         <div class="flex-grid-thirds product-list">
+            {{#each products as |product|}}
                 <div class="col-4 col-s-12 product-jumbo">
-                        <img class="product-image--md" src="http://www.stickpng.com/assets/thumbs/580b57fbd9996e24bc43bd60.png" alt="mario" >
-                        <h5>Action figure bombeiro Mario topzeira das galáxias</h5>
+                        <img class="product-image--md" src="{{product.banner}}" alt="mario" >
+                        <h5>{{product.description}}</h5>
                         <div class="card-shop">
-                            <label class="label--sm" for="de"> de R$ 100,0</label>
-                            <h5 class="product-price">por R$ 149,00</h5>          
+                            <label class="label--sm" for="de"> de R$ {{product.originalPrice}}</label>
+                            <h5 class="product-price">por R$ {{product.price}}</h5>          
                         </div>
                 </div>
-                <div class="col-4 col-s-12 product-jumbo">
-                        <img class="product-image--md" src="https://purepng.com/public/uploads/large/purepng.com-mario-brosmariofictional-charactervideo-gamefranchisenintendodesigner-17015286315852qvna.png" alt="mario" >
-                        <h5>Action figure bombeiro Mario topzeira das galáxias</h5>
-                        <div class="card-shop">
-                            <label class="label--sm" for="de"> de R$ 100,0</label>      
-                            <h5 class="product-price">por R$ 149,00</h5>                   
-                        </div>
-                </div>
-                <div class="col-4 col-s-12 product-jumbo">
-                        <img class="product-image--md" src="https://stickeroid.com/uploads/pic/full-pngmart/thumb/stickeroid_5bf566caa090a.png" alt="mario" >
-                        <h5>Action figure bombeiro Mario topzeira das galáxias</h5>
-                        <div class="card-shop">
-                            <label class="label--sm" for="de"> de R$ 100,0</label>                      
-                            <h5 class="product-price">por R$ 149,00</h5>                           
-                        </div>
-                </div>
+            {{/each}}
         </div>
   </div>
 

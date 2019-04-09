@@ -20,6 +20,8 @@ module.exports = function(defaults) {
     }
   });
 
+  app.import('node_modules/jquery-modal/jquery.modal.min.js');
+  app.import('node_modules/jquery-modal/jquery.modal.min.css');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
