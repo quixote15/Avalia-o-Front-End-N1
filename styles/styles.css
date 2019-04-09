@@ -1,3 +1,6 @@
+/**
+    Card de compra de produto
+**/
 .product-image{
     width: 360px;
     height: 360px;
@@ -12,6 +15,34 @@
 }
 
 .product-card-shop{
+    padding: 8px;
     background-color: #f8f8f8;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
+}
+
+.product-price{
+    font-size: 18px;
+    color: #4EC2DD;
+}
+
+.product-card-shop label{
+    font-size: 12px;
+}
+
+/**
+   Buttons
+**/
+
+.btn{
+    background-color: #71CE4B;
+    padding: 8px;
+    color: #FFF;
+    font-size: 18px;
+    border:none;
+    box-shadow: 0 3px #4CAF50;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }
