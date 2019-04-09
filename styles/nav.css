@@ -5,6 +5,7 @@
 body {
   margin: 0px;
   font-family: 'Helvetica';
+  text-align: center;
 }
 
 .nav {
@@ -12,7 +13,6 @@ body {
   height: 50px;
   width: 100%;
   background-color: white;
-  text-align: center;
   position: relative;
   padding-bottom: 75px;
  

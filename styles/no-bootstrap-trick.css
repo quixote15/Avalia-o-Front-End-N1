@@ -39,3 +39,44 @@
     .col-12 {width: 100%;}
     .hidden-md{display: inline !important; }
   }
+
+  .flex-grid {
+    display: flex;
+    margin: 10px auto; 
+    width: 50%;
+
+    
+  }
+  .flex-grid .col {
+    flex: 1;
+    
+  }
+  .flex-grid-thirds {
+    display: flex;
+    width: 50%;
+    margin: 0 auto; 
+    justify-content: space-between;
+  }
+  .flex-grid-thirds .col {
+    width: 32%;
+  }
+  
+  @media (max-width: 400px) {
+    .flex-grid,
+    .flex-grid-thirds {
+      display: block;
+      
+    }
+    .flex-grid,
+    .flex-grid-thirds .col {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+  }
+  
+ 
+  .col {
+
+    padding: 20px;
+  }
