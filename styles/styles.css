@@ -14,12 +14,21 @@
     font-size: 20px;
 }
 
-.product-card-shop{
+.product-card-shop,.product-card-frete{
     padding: 8px;
     background-color: #f8f8f8;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+}
+.product-card-shop,.product-card-frete{
+    background-color: #f8f8f8;
+}
+
+.product-card-frete{
+    margin-top: 10px;
+    background-color: #4EC2DD;
+
 }
 
 .product-price{
@@ -45,4 +54,24 @@
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
+}
+
+.btn--dark{
+    background-color: #0F4156;
+    box-shadow: 0 3px #0F4140;
+    width: 90px;
+}
+
+/**
+    inputs
+**/
+
+input.custom-input{
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    max-width:110px;
+}
+input.custom-input--sm{
+    max-width: 45px;
 }
