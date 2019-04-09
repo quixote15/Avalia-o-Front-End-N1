@@ -143,6 +143,7 @@ input.custom-input--sm{
 .footer p{
     text-align: center;
     color: white;
+    font-weight: 600;
 }
 
 .footer--dark{
@@ -164,7 +165,17 @@ input.custom-input--sm{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .product-title,.product-card-shop, .product-card-frete{
+        text-align: center;
+    }
 
+    .valign-wrapper--evenly{
+        flex-direction: row;
+    }
+
+    .product-card-frete{
+        margin-bottom: 20px;
+    }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
