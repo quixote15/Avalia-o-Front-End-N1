@@ -8,6 +8,10 @@ body {
   text-align: center;
 }
 
+h1,h2,h3,h4,h5,label{
+    color: #b1b1b1;
+}
+
 .nav {
   margin-top: 10px;
   height: 50px;
