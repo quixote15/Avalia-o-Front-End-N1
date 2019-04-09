@@ -10,10 +10,13 @@ export default Controller.extend({
 
     cartItems: alias('cart.length'),
 
+    openModal: false,
 
     actions:{
         addProductToCart(product){
+            this.set('openModal', true);
             this.get('cart').pushObject(product);
+            
         }
     }
 });

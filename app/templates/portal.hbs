@@ -38,12 +38,6 @@
 
   <div class="container">
 
-<form id="login-form" class="modal">
-  <h1>oi</h1>
-</form>
-
-<a href="#login-form" rel="modal:open">Login</a>
-
       <div class="flex-grid-thirds">
         <div class="col-1 col-s-12">
             <img class="product-image--small" src="{{defaultProduct.banner}}" alt="mario" >
@@ -140,4 +134,7 @@
           </div>
       </div>
   </footer>
+
+  {{#modal-component open=openModal}}
+  {{/modal-component}}
 {{outlet}}
