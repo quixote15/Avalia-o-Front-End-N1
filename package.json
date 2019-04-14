@@ -14,7 +14,7 @@
     "build": "",
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
-    "start": "npm install -g ember-cli & npm install & node server-node.js",
+    "start": "node server-node.js",
     "test": "ember test"
   },
   "devDependencies": {
@@ -46,7 +46,6 @@
     "ember-source": "~3.6.0",
     "ember-welcome-page": "^3.2.0",
     "eslint-plugin-ember": "^5.2.0",
-    "express": "^4.16.4",
     "loader.js": "^4.7.0",
     "qunit-dom": "^0.8.0",
     "sass": "^1.18.0"
@@ -55,6 +54,7 @@
     "node": "6.* || 8.* || >= 10.*"
   },
   "dependencies": {
-    "jquery-modal": "^0.9.2"
+    "jquery-modal": "^0.9.2",
+    "express": "^4.16.4"
   }
 }
