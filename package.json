@@ -14,7 +14,7 @@
     "build": "",
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
-    "start": "node server-node.js",
+    "start": "npm install -g ember-cli & npm install & node server-node.js",
     "test": "ember test"
   },
   "devDependencies": {
