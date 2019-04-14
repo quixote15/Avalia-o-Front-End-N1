@@ -11,10 +11,10 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "ember build",
+    "build": "",
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
-    "start": "ember serve",
+    "start": "node server-node.js",
     "test": "ember test"
   },
   "devDependencies": {
